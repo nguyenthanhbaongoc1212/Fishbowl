@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.shark {
+    width:230px; height:190px;
+    position:absolute;
+    top: 350px; left:15px;
+    animation: shark 16s linear 0.25s;
+    animation-iteration-count:infinite;
+}
+@keyframes shark {
+    0%   {left:10px; top:380px;}
+    25%  {left:30%; top:350px;}
+    50%  {left:70%; top:325px;}
+    80%  {left:85%; top:225px;}
+    100% {left:15px; top:380px;  transform:scaleX(-1);}
+}
+.diver1 {
+    position: absolute;
+    animation-name: diver1;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver1
+{
+    0%   {left:20px; top:230px;}
+    25%  {left:30%; top:350px;}
+    50%  {left:70%; top:325px;}
+    80%  {left:50%; top:280px;}
+    100% {left:15px; top:190px;  transform: rotateY(180deg);}
+}
+
+.diver2 {
+    transform: rotate(-90deg);
+    width:90px; height:80px;
+    position:absolute;
+    top:280px; left:3%;
+    animation: diver2 12s ease-in-out 0.2s;
+    animation-iteration-count:infinite;
+}
+@keyframes diver2 {
+    0% {top:300px; left:20%;}
+    50% {top:-18px; left:20%;}
+    100% {top: 315px; left:20%; transform:rotate(90deg);}
+}
+.diver3 {
+    position: absolute;
+    animation-name: diver3;
+    transform: rotateY(180deg);
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver3
+{
+    0%   {right:25px; top:380px;transform: rotateY(180deg);}
+    25%  {right:30%; top:350px;transform: rotateY(180deg);}
+    35%  {right:50%; top:200px;transform: rotateY(180deg);}
+    50%  {right:70%; top:250px;transform: rotateY(180deg);}
+    80%  {right:85%; top:350px;transform: rotateY(0deg);}
+    100% {right:25px; top:380px;transform: rotateY(0deg);}
+}
+.turtle {
+    position: absolute;
+    animation-name: turtle;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes turtle
+{
+    0% {left: 180px; top: 50px;}
+    15% {left: 350px; top: 300px;}
+    45% {left: 650px; top: 150px;}
+    85% {left: 350px; top: 220px;}
+    100% {left: 150px; top: 100px;transform:scaleX(-1)}
+}
+.goldfish {
+    width:310x; height:100px;
+    position:absolute;
+    top: 290px; left:22%;
+    animation: goldfish 15s linear 0.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes goldfish {
+    0%   {left:22%; top:230px;}
+    25%  {left:95%; top:230px;}
+    60%  {left:80%; top:230px;}
+    80%  {left:60%; top:230px;}
+    100% {transform:scaleX(-1);}
+}
